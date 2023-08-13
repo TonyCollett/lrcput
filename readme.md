@@ -30,6 +30,7 @@ Replace "path/to/your/directory" with the actual path to the directory containin
     -d or --directory: Specify the directory containing audio files and LRC files.
     -s or --skip: Optional. Skip files that already have embedded lyrics.
     -r or --reduce: Optional. Reduce (delete) LRC files after embedding.
+    -R or --recursive: Optional. Recursively process subdirectories
 
 ## Example
 
