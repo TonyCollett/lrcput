@@ -2,6 +2,8 @@
 
 The `lrcput.py` script allows you to embed LRC (Lyrics) files into both FLAC and MP3 audio files. It supports specifying a directory containing the audio files and their corresponding LRC files with the same name.
 
+**this script was designed to embed lyrics acquired from [lrcget](https://github.com/tranxuanthang/lrcget)**
+
 ## Requirements
 
 - Python 3.x
