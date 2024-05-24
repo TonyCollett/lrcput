@@ -1,6 +1,6 @@
 # Audio Lyrics Embedding Script (lrcput.py)
 
-The `lrcput.py` script allows you to embed LRC (Lyrics) files into both FLAC and MP3 audio files. It supports specifying a directory containing the audio files and their corresponding LRC files with the same name.
+The `lrcput.py` script allows you to embed LRC (Lyrics) files into both FLAC, M4A and MP3 audio files. It supports specifying a directory containing the audio files and their corresponding LRC files with the same name.
 
 **this script was designed to embed lyrics acquired from [lrcget](https://github.com/tranxuanthang/lrcget)**
 
@@ -14,7 +14,7 @@ The `lrcput.py` script allows you to embed LRC (Lyrics) files into both FLAC and
 
 ## Usage
 
-1. Place your audio files (FLAC or MP3) and their corresponding LRC files in the same directory.
+1. Place your audio files (FLAC or M4A or MP3) and their corresponding LRC files in the same directory.
 
 2. Open a terminal or command prompt.
 
@@ -24,6 +24,7 @@ The `lrcput.py` script allows you to embed LRC (Lyrics) files into both FLAC and
 
    ```sh
    python lrcput.py -d "path/to/your/directory" -s -r
+   ```
 
 Replace "path/to/your/directory" with the actual path to the directory containing your audio and LRC files.
 
@@ -35,13 +36,16 @@ Replace "path/to/your/directory" with the actual path to the directory containin
 ## Example
 
 Suppose you have the following directory structure:
+
 ```audio_directory/
 |-- song1.flac
 |-- song1.lrc
 |-- song2.mp3
 |-- song2.lrc
+|-- song3.m4a
+|-- song3.lrc
 |-- ...
-``````
+```
 
 To embed LRC files into the audio files and delete them after embedding, navigate to the script's directory and run the following command:
 
@@ -51,7 +55,7 @@ python lrcput.py -d "path/to/audio_directory" -s -r
 
 ## Notes
 
-- The LRC files should have the same name astheir corresponding audio files, but witha .lrc extension.
+- The LRC files should have the same name astheir corresponding audio files, but with a .lrc extension.
 
 - You can modify the script's options andbehavior by editing the script directly.
 
